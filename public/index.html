@@ -1,11 +1,183 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello world</title>
+    <title>Sher Minn Chong</title>
     <link rel='stylesheet' href='/styles.css'/>
 </head>
 <body>
-    hi that you :)
+
+    <article class='resume'>
+        <!-- personal details -->
+        <header>
+            <div class="main">
+                <h1 class="name">Sher Minn Chong</h1>
+                <span class="title">Front-end Web Developer</span>
+            </div>
+            <ul class="contact">
+                <li>+1 347 495 6479</li>
+                <li>sherminn.chong@gmail.com</li>
+                <li>
+                    <a href="http://github.com/piratefsh">github.com/piratefsh</a>
+                </li>
+            </ul>
+        </header>
+
+        <div class='content'>
+            <aside>
+                <h2>Education</h2>
+                <div>
+                    <h3>University of Wisconsin - Madison</h3>
+                    <ul>
+                        <li>Bachelor of Science 2013, Computer Sciences &amp; Philosophy</li>
+                    </ul>
+                    <ul>
+                        <li>GPA 3.9/4.0</li>
+                        <li>Dean's List, 5 semesters</li>
+                    </ul>
+                </div>
+                <hr/>
+
+                <h2>Skills</h2>
+                <ul>
+                    <li>Javascript, ES6</li>
+                    <li>Python</li>
+                    <li>HTML5</li>
+                    <li>CSS3/Sass</li>
+                    <li>Image Processing</li>
+                    <li>OpenCV</li>
+                    <li>AngularJS</li>
+                    <li>Teaching</li>
+                </ul>
+            </aside>
+
+            <div>
+                <!-- work -->
+                <section>
+                    <h2>Experience</h2>
+
+                    <div class="item">
+                        <h3>Recurse Center,</h3>
+                        <span>Participant</span>
+                        <span class="dates">Aug 2015 - Nov 2015</span>
+
+                        <ul>
+                            <li>
+                                Dedicated 3 months at a self-directed educational retreat learning to be a better programmer by learning various new technologies and programming concepts.
+                            </li>
+
+                            <li>
+                                Pair programmed and worked on various projects spanning image processing, peer-to-peer communication with WebRTC, and data visualization on maps.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <h3>Code Equality,</h3>
+                        <span>Co-founder</span>
+
+                        <span class="dates">Jan 2014 - Aug 2015</span>
+
+                        <ul>
+                            <li>
+                                Started a non-profit to provide opportunites for Malaysian students to learn coding.
+                            </li>
+                            <li>
+                                Organized, marketed and taught at monthly coding and tech interest events and classes. Started Rails Girls in Malaysia, an international series of female-friendly coding workshops.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <h3>Web Developer,</h3>
+                        <span>Soft Space</span>
+
+                        <span class="dates">Jul 2014 - May 2015</span>
+
+                        <ul>
+                            <li>
+                                Designed and implemented payment-related webapp prototypes, including pre-order and rewards apps, dashboards and ticketing solutions.
+                            </li>
+
+                            <li>Built, maintained and deployed company websites.</li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <h3>Freelance Web Developer,</h3>
+                        <span>Jobstreet.com, Wobb.my</span>
+
+                        <span class="dates">2013 - 2015</span>
+
+                        <ul>
+                            <li>
+                                Freelanced at various companies working on core apps. Worked closely with development teams to design and build responsive, front-end web applications on AngularJS.
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+                <hr/>
+                <!-- projects -->
+                <section>
+                    <h2>Selected Projects</h2>
+
+                    <div class="item">
+                        <h3>NYC Subway Traffic Visualizer</h3>
+                        <a class='link' target="_blank" href="http://piratefsh.github.io/mta-maps/public"> <i class="fa fa-external-link"></i>
+                        </a>
+
+                        <ul>
+                            <li>
+                                The MTA of New York City releases the number of exits and entries at every subway station in the city. I scraped it, cleaned it and visualized it all on a map.
+                            </li>
+                            <li class='technologies'>ES6 Javascript, Leaflet, SASS, SQLite, Python</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="item">
+                        <h3>Video Chat app with WebRTC</h3>
+                        <a class='link' target="_blank" href="https://github.com/piratefsh/webrtc-video-chat"> <i class="fa fa-external-link"></i>
+                        </a>
+
+                        <ul>
+                            <li>
+                               Built a video chat webapp on the browser level WebRTC (peer-to-peer) API and a simple signalling server to help users achieve initial connection.
+                            </li>
+                            <li class='technologies'>Javascript, WebRTC, Node.js</li>
+                        </ul>
+                    </div>
+                  
+                    <div class="item">
+                        <h3>Set (Card Game) Solver</h3>
+                        <a class='link' target="_blank" href="https://github.com/piratefsh/webrtc-video-chat">
+                            <i class="fa fa-external-link"></i>
+                        </a>
+
+                        <ul>
+                            <li>
+                                Used OpenCV to detect cards in an image and properties of said cards. Self-taught image processing concepts. 
+                            </li>
+                            <li class='technologies'>Python, OpenCV</li>
+                        </ul>
+                    </div>
+
+                     <div class="item">
+                        <h3>Cafehop.my &ndash; Mapping cafes</h3>
+                        <a class='link' target="_blank" href="http://cafehop.my/"> <i class="fa fa-external-link"></i>
+                        </a>
+
+                        <ul>
+                            <li>
+                               Designed and built a fully responsive HTML5 web app mapping independent cafes around cities in Malaysia, the first of it’s kind in the country.
+                            </li>
+                            <li class='technologies'>Javascript, AngularJS, SASS</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </article>
     <script src="/bundle.js"></script>
 </body>
 </html>
