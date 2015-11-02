@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Vollkorn)
+$space: 20px
+$primary-color: #01cbbf
+$grey: #555555
+$border: 1px solid #aaaaaa
+.resume
+    color: #333333
+    width: 720px
+    margin: 0 auto
+    font-family: 'Miso'
+    font-size: 1.1em
+
+    h1, h2, h3
+        font-family: 'Miso'
+
+    ul 
+        padding-left: 0px
+        list-style-type: none
+        li 
+            margin-bottom: $space/3
+
+    hr 
+        border: none
+        border-bottom: $border
+        border-bottom-color: $primary-color
+
+    a
+        color: $primary-color
+        text-decoration: none
+        &:visited
+            color: $primary-color
+
+    header
+        width: 100%
+        .name
+            display: inline-block
+        .title
+            margin-left: $space
+        ul.contact 
+            padding: 0
+            margin: 0
+            li 
+                display: inline-block
+                padding-right: $space/2
+                &:not(:last-child)
+                    border-right: $border
+                &:not(:first-child)
+                    padding-left: $space/2
+
+    .content
+        display: flex
+        aside 
+            width: 180px
+            margin-right: $space
+        > div
+            flex: 1
+
+        section
+            h3 
+                display: inline-block
+                margin: 0px
+                + span 
+                    margin-left: 0px
+                    font-weight: bold
+                    color: $grey
+            .item 
+                margin-bottom: $space
+                ul
+                    margin-top: $space/2
+            .dates 
+                float: right
+                font-style: italic
+                color: $grey
+            .link 
+                // float: right
+                font-size: 0.9em 
+                margin-left: $space/4
+            .technologies
+                color: $grey
+                font-size: 0.9em
+
+*
+  -webkit-print-color-adjust: exact !important
+
+@media print 
+    body 
+        color: red
+    a
+        color: $primary-color !important
+        text-decoration: none !important
+        &:visited
+            color: $primary-color !important
+    .name 
+        margin-top: 0px
