@@ -243,6 +243,16 @@ th {
       color: #555555;
       font-size: 0.9em; }
 
+* {
+  -webkit-print-color-adjust: exact !important; }
+
 @media print {
+  body {
+    color: red; }
+  a {
+    color: #01cbbf !important;
+    text-decoration: none !important; }
+    a:visited {
+      color: #01cbbf !important; }
   .name {
     margin-top: 0px; } }
