@@ -176,14 +176,21 @@ td,
 th {
   padding: 0; }
 
+@font-face {
+  font-family: 'Miso';
+  src: url(d31113d20e1d5b1e1de830da4dfc06cf.eot);
+  src: url(d31113d20e1d5b1e1de830da4dfc06cf.eot?#iefix) format("embedded-opentype"), url(f9705394d4981d6b9188484f5bb6ea81.woff) format("woff"), url(ab45dc1b0b1dcdeedfbfcc85b3657563.ttf) format("truetype"), url(df455e36229f8f69fe01fa8bdc6ce6a4.svg#misoregular) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .resume {
   color: #333333;
   width: 720px;
   margin: 0 auto;
-  font-family: 'Miso';
+  font-family: "Miso";
   font-size: 1.1em; }
   .resume h1, .resume h2, .resume h3 {
-    font-family: 'Miso'; }
+    font-family: "Miso"; }
   .resume ul {
     padding-left: 0px;
     list-style-type: none; }
