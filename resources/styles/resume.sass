@@ -3,6 +3,7 @@ $space: 20px
 $primary-color: #01cbbf
 $grey: #555555
 $border: 1px solid #aaaaaa
+$color-border: 1px solid $primary-color
 .resume
     color: #333333
     width: 720px
@@ -31,17 +32,27 @@ $border: 1px solid #aaaaaa
             color: $primary-color
 
     header
-        width: 100%
+        width: 100% 
+        display: flex
+        align-items: center
+        margin-top: $space
         .name
             display: inline-block
+            margin: 0px
+
         .title
-            margin-left: $space
+            margin-left: $space*0.75
+
         ul.contact 
-            padding: 0
-            margin: 0
+            display: inline-block
+            margin: 0px
+            padding: 0px
+            flex: 1
+            text-align: right
             li 
                 display: inline-block
                 padding-right: $space/2
+                margin-bottom: 0px
                 &:not(:last-child)
                     border-right: $border
                 &:not(:first-child)
@@ -51,7 +62,7 @@ $border: 1px solid #aaaaaa
         display: flex
         aside 
             width: 180px
-            margin-right: $space
+            margin-left: $space*1.5
         > div
             flex: 1
 
@@ -66,7 +77,11 @@ $border: 1px solid #aaaaaa
             .item 
                 margin-bottom: $space
                 ul
+                    line-height: 1.1em
                     margin-top: $space/2
+                &:last-child
+                    ul 
+                        margin-bottom: 0px
             .dates 
                 float: right
                 font-style: italic
@@ -90,5 +105,5 @@ $border: 1px solid #aaaaaa
         text-decoration: none !important
         &:visited
             color: $primary-color !important
-    .name 
+    header 
         margin-top: 0px
