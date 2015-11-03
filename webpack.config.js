@@ -7,7 +7,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'public'),
-        publicPath: '/',
+        publicPath: '',
         filename: 'bundle.js'
     },
     module: {
@@ -27,6 +27,10 @@ module.exports = {
             {
                 test: /\.(sass|scss)$/,
                 loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader')
+            },
+            {
+                test: /\.less$/,
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader!less-loader')
             },
             {
                 test: /\.json$/,
@@ -51,7 +55,8 @@ module.exports = {
         modulesDirectories: [
             'node_modules',
             'resources',
-            'app'
+            'app',
+            'config',
         ],
         extensions: ['.js', '.json', '']
     },
