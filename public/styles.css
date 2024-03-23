@@ -199,12 +199,12 @@ th {
   .resume hr {
     border: none;
     border-bottom: 1px solid #aaaaaa;
-    border-bottom-color: #01cbbf; }
+    border-bottom-color: #00b359; }
   .resume a {
-    color: #01cbbf;
+    color: #00b359;
     text-decoration: none; }
     .resume a:visited {
-      color: #01cbbf; }
+      color: #00b359; }
   .resume hr {
     margin: 20px 0px; }
   .resume header {
@@ -272,9 +272,9 @@ th {
   body {
     color: red; }
   a {
-    color: #01cbbf !important;
+    color: #00b359 !important;
     text-decoration: none !important; }
     a:visited {
-      color: #01cbbf !important; }
+      color: #00b359 !important; }
   header {
     margin-top: 0px; } }
